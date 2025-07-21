@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import streamlit as st
 import plotly.express as px
+import glob
 
 # Set page configuration
 st.set_page_config(page_title="Data Visualizer Pro",
@@ -23,18 +24,19 @@ data_source = st.radio(
 df = None  # Initialize dataframe variable
 
 # Built-in CSV files option
-if data_source == "Use built-in datasets":
-  folder_path = "data"  # look for a 'data' folder in the same directory
-    
+if data_source == "Use built-in datasets":    
     # Check if data folder exists
-    if os.path.exists(folder_path):
-        file_list = [file for file in os.listdir(folder_path) if file.endswith(".csv")]
+    file_list = glob.glob("data/*.csv")
         
-        if file_list:
-            selected_file = st.selectbox("Select a built-in dataset", file_list, index=None)
+        # Extract just the filenames for display
+        file_names = [os.path.basename(f) for f in file_list]
+        
+        if file_names:
+            selected_file = st.selectbox("Select a built-in dataset", file_names, index=None)
             
             if selected_file:
-                file_path = os.path.join(folder_path, selected_file)
+                # Find the full path of the selected file
+                file_path = os.path.join("data", selected_file)
                 df = pd.read_csv(file_path)
                 st.success(f"✅ Loaded dataset: {selected_file}")
         else:
