@@ -24,8 +24,7 @@ df = None  # Initialize dataframe variable
 
 # Built-in CSV files option
 if data_source == "Use built-in datasets":
-    working_dir = os.path.dirname(os.path.abspath(__file__))
-    folder_path = f"{working_dir}/data"
+  folder_path = "data"  # look for a 'data' folder in the same directory
     
     # Check if data folder exists
     if os.path.exists(folder_path):
