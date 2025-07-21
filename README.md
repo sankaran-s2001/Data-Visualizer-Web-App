@@ -52,6 +52,7 @@ streamlit run app.py
 ```
 
 # File Structure
+```bash
 .
 ├── Data/ # Sample datasets
 │ ├── cyclone_dataset.csv
@@ -61,6 +62,7 @@ streamlit run app.py
 ├── app.py # Main application
 ├── requirements.txt # Dependencies
 └── README.md # Documentation
+```
 
 
 ## ✉️ Contact
