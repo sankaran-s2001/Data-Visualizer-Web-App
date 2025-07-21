@@ -208,3 +208,14 @@ else:
         - Creates legend automatically for easy interpretation
         - Works with both numeric and categorical columns
         """)
+
+# Footer
+st.markdown("---")
+st.markdown(
+    """
+    <div style="text-align: center; padding: 10px;">
+        Developed by <strong>Sankaran S</strong>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
