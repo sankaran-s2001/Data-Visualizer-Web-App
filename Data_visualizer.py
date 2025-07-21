@@ -27,10 +27,10 @@ df = None  # Initialize dataframe variable
 if data_source == "Use built-in datasets":    
     try:
         # Create data directory if it doesn't exist
-        os.makedirs("data", exist_ok=True)
+        os.makedirs("Data", exist_ok=True)
         
         # Find all CSV files in the data folder
-        file_list = glob.glob("data/*.csv")
+        file_list = glob.glob("Data/*.csv")
         
         if file_list:
             # Extract just the filenames for display
@@ -39,7 +39,7 @@ if data_source == "Use built-in datasets":
             
             if selected_file:
                 # Find the full path of the selected file
-                file_path = os.path.join("data", selected_file)
+                file_path = os.path.join("Data", selected_file)
                 df = pd.read_csv(file_path)
                 st.success(f"✅ Loaded dataset: {selected_file}")
         else:
