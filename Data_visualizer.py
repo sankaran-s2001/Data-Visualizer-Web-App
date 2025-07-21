@@ -25,13 +25,16 @@ df = None  # Initialize dataframe variable
 
 # Built-in CSV files option
 if data_source == "Use built-in datasets":    
-    # Check if data folder exists
-    file_list = glob.glob("data/*.csv")
+    try:
+        # Create data directory if it doesn't exist
+        os.makedirs("data", exist_ok=True)
         
-        # Extract just the filenames for display
-        file_names = [os.path.basename(f) for f in file_list]
+        # Find all CSV files in the data folder
+        file_list = glob.glob("data/*.csv")
         
-        if file_names:
+        if file_list:
+            # Extract just the filenames for display
+            file_names = [os.path.basename(f) for f in file_list]
             selected_file = st.selectbox("Select a built-in dataset", file_names, index=None)
             
             if selected_file:
@@ -40,9 +43,9 @@ if data_source == "Use built-in datasets":
                 df = pd.read_csv(file_path)
                 st.success(f"✅ Loaded dataset: {selected_file}")
         else:
-            st.warning("⚠️ No CSV files found in the data folder")
-    else:
-        st.error("❌ Data folder not found. Please create a 'data' folder with CSV files.")
+            st.warning("⚠️ No CSV files found in the data folder. Please add CSV files to the 'data' folder.")
+    except Exception as e:
+        st.error(f"❌ Error accessing data: {str(e)}")
 
 # File upload option
 elif data_source == "Upload your own CSV file":
