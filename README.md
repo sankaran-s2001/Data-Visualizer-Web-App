@@ -6,8 +6,7 @@
 
 An interactive web application for visualizing CSV data with beautiful charts and graphs.
 
-![App Screenshot](<img width="575" height="1007" alt="image" src="https://github.com/user-attachments/assets/196ab5bd-3741-4fe4-8fcc-48c65d8e8fd6" />
-) <!-- Replace with actual screenshot later -->
+![App Screenshot](image.png)
 
 ## 🌟 Features
 
