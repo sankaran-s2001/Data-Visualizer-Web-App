@@ -54,17 +54,22 @@ streamlit run app.py
 
 # File Structure
 .
-├── Data/                   # Sample datasets
-│   ├── cyclone_dataset.csv
-│   ├── employee_data.csv
-│   ├── sales_data.csv
-│   └── student_scores.csv
-├── app.py                  # Main application
-├── requirements.txt        # Dependencies
-└── README.md               # Documentation
+├── Data/ # Sample datasets
+│ ├── cyclone_dataset.csv
+│ ├── employee_data.csv
+│ ├── sales_data.csv
+│ └── student_scores.csv
+├── app.py # Main application
+├── requirements.txt # Dependencies
+└── README.md # Documentation
 
-# Contact
-Sankaran S
-![GitHub](https://github.com/sankaran-s2001)
-![LinkedIn](https://www.linkedin.com/in/sankaran-s21/)
-![Email](sankaran121101@gmail.com)
+
+## ✉️ Contact
+**Sankaran S**  
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sankaran-s2001)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sankaran-s21/)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sankaran121101@gmail.com)
+
+---
+
+⭐ If you find this project useful, please star it!
