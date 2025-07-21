@@ -4,6 +4,14 @@ import streamlit as st
 import plotly.express as px
 import glob
 
+# Add this right after your imports
+st.write("Current directory:", os.getcwd())
+st.write("Directory contents:", os.listdir('.'))
+st.write("Data directory exists:", os.path.exists('data'))
+if os.path.exists('data'):
+    st.write("Data directory contents:", os.listdir('data'))
+
+
 # Set page configuration
 st.set_page_config(page_title="Data Visualizer Pro",
                    layout="centered",
