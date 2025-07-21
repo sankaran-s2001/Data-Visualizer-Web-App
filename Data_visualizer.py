@@ -4,6 +4,17 @@ import streamlit as st
 import plotly.express as px
 import glob
 
+# Add this to check file permissions
+st.write("Current directory:", os.getcwd())
+st.write("Files in data directory:", os.listdir("data"))
+
+st.write("Current working directory:", os.getcwd())
+st.write("Directory contents:", os.listdir('.'))
+
+
+
+
+
 # Set page configuration
 st.set_page_config(page_title="Data Visualizer Pro",
                    layout="centered",
