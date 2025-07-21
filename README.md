@@ -1,1 +1,65 @@
-# Data-Visualizer-Web-App
+# 📊 Data Visualizer Pro - Web Application
+
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+
+An interactive web application for visualizing CSV data with beautiful charts and graphs.
+
+![App Screenshot](<img width="575" height="1007" alt="image" src="https://github.com/user-attachments/assets/196ab5bd-3741-4fe4-8fcc-48c65d8e8fd6" />
+) <!-- Replace with actual screenshot later -->
+
+## 🌟 Features
+
+- **Multiple Data Sources**:
+  - Use built-in sample datasets
+  - Upload your own CSV files
+- **Interactive Visualizations**:
+  - Line charts
+  - Bar charts
+  - Scatter plots
+  - Distribution plots
+  - Count plots
+- **Customization Options**:
+  - Choose X/Y axes
+  - Color coding by categories
+  - Adjustable bin sizes for histograms
+- **User-Friendly Interface**:
+  - Clean, modern design
+  - Responsive layout
+  - Help sections for guidance
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.7+
+- pip package manager
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sankaran-s2001/Data-Visualizer-Web-App.git
+   cd Data-Visualizer-Web-App
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Lauch the app
+streamlit run app.py
+
+# File Structure
+.
+├── Data/                   # Sample datasets
+│   ├── cyclone_dataset.csv
+│   ├── employee_data.csv
+│   ├── sales_data.csv
+│   └── student_scores.csv
+├── app.py                  # Main application
+├── requirements.txt        # Dependencies
+└── README.md               # Documentation
+
+# Contact
+Sankaran S
+GitHub
+LinkedIn (Add your LinkedIn profile)
+Email (Add your email)
