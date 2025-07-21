@@ -40,12 +40,17 @@ An interactive web application for visualizing CSV data with beautiful charts an
    ```bash
    git clone https://github.com/sankaran-s2001/Data-Visualizer-Web-App.git
    cd Data-Visualizer-Web-App
+   ```
 
 # Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 # Lauch the app
+```bash
 streamlit run app.py
+```
 
 # File Structure
 .
@@ -60,6 +65,6 @@ streamlit run app.py
 
 # Contact
 Sankaran S
-GitHub
-LinkedIn (Add your LinkedIn profile)
-Email (Add your email)
+![GitHub](https://github.com/sankaran-s2001)
+![LinkedIn](https://www.linkedin.com/in/sankaran-s21/)
+![Email](sankaran121101@gmail.com)
